@@ -16,7 +16,8 @@ tags: [home, notes]
 
 ## Read Next
 
-- [[youtube|YouTube summaries]]
+- [[youtube-summaries|YouTube Summaries]]
+- [[github-summaries|GitHub Summaries]]
 - [[tags]]
 
 ## What This Site Is
@@ -38,7 +39,8 @@ tags: [home, notes]
 ## Navigation
 
 - [[tags]]
-- [[youtube]]
+- [[youtube-summaries]]
+- [[github-summaries]]
 
 ## Current Direction
 
