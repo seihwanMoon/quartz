@@ -44,6 +44,25 @@ export const defaultContentPageLayout: PageLayout = {
   right: [
     Component.DesktopOnly(Component.TableOfContents()),
     Component.DesktopOnly(
+      Component.Graph({
+        localGraph: {
+          drag: false,
+          zoom: true,
+          depth: 1,
+          scale: 0.85,
+          repelForce: 0.35,
+          centerForce: 0.2,
+          linkDistance: 26,
+          fontSize: 0.52,
+          opacityScale: 0.75,
+          showTags: false,
+          removeTags: [],
+          focusOnHover: false,
+          enableRadial: false,
+        },
+      }),
+    ),
+    Component.DesktopOnly(
       Component.RecentNotes({
         title: "Recent Writing",
         limit: 4,

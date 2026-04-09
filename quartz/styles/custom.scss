@@ -186,16 +186,35 @@ code {
 }
 
 .recent-notes,
-.toc {
+.toc,
+.graph {
   padding-top: 0.25rem;
 }
 
 .recent-notes > h3,
-.toc > h3 {
+.toc > h3,
+.graph > h3 {
   font-size: 0.82rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   opacity: 0.7;
+}
+
+.graph {
+  opacity: 0.88;
+
+  .graph-outer {
+    height: 190px !important;
+    border-radius: 0.95rem !important;
+    border: 1px solid color-mix(in srgb, var(--secondary) 10%, var(--lightgray)) !important;
+    background: color-mix(in srgb, var(--surface-strong) 72%, transparent);
+    margin-top: 0.6rem !important;
+  }
+
+  .global-graph-icon {
+    opacity: 0.38 !important;
+    transform: scale(0.9);
+  }
 }
 
 input[type="search"],
