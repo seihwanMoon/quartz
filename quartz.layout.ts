@@ -45,10 +45,10 @@ export const defaultContentPageLayout: PageLayout = {
     Component.DesktopOnly(Component.TableOfContents()),
     Component.DesktopOnly(
       Component.RecentNotes({
-        title: "Latest Notes",
+        title: "Recent Writing",
         limit: 4,
         showTags: false,
-        filter: (f) => f.slug !== "index",
+        filter: (f) => f.slug !== "index" && f.slug !== "youtube",
       }),
     ),
   ],
@@ -74,9 +74,10 @@ export const defaultListPageLayout: PageLayout = {
   right: [
     Component.DesktopOnly(
       Component.RecentNotes({
-        title: "Latest Notes",
+        title: "Recent Writing",
         limit: 4,
         showTags: false,
+        filter: (f) => f.slug !== "index" && f.slug !== "youtube",
       }),
     ),
   ],

@@ -24,15 +24,15 @@ const config: QuartzConfig = {
       cdnCaching: true,
       typography: {
         header: {
-          name: "Noto Serif KR",
-          weights: [600, 700],
+          name: "IBM Plex Sans KR",
+          weights: [500, 600, 700],
         },
         title: {
           name: "Noto Serif KR",
           weights: [700],
         },
         body: {
-          name: "Noto Sans KR",
+          name: "IBM Plex Sans KR",
           weights: [400, 500, 700],
         },
         code: "JetBrains Mono",
