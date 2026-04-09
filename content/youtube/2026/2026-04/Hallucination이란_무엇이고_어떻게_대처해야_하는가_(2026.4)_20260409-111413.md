@@ -6,8 +6,6 @@ duration: "38:38"
 summary_line: "LLM 환각을 사실성·충실성·맥락 부족·아첨 편향으로 나눠 원인과 검증·대응 원칙을 정리한 영상."
 ---
 
-# Hallucination이란 무엇이고 어떻게 대처해야 하는가 (2026.4)
-
 - 원본 URL: https://youtu.be/5j2estMEg-U?si=lnk3DWjXCS3jPwRq
 - 원본 영상 등록일: 2026-04-08
 - 재생시간: 38:38

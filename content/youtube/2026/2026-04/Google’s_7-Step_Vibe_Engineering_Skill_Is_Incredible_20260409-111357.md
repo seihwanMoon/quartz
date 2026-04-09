@@ -6,8 +6,6 @@ duration: "31:06"
 summary_line: "Google Cloud식 7단계 에이전트 스킬로 아이디어 정제부터 PRD, 수직 슬라이스 구현, 리뷰·배포까지 묶는 실전형 개발 워크플로를 검증한 영상"
 ---
 
-# Google’s 7-Step Vibe Engineering Skill Is Incredible
-
 - 원본 URL: https://youtu.be/4bfKyZ7hbsU?si=amRLXXiit6ENEqNN
 - 원본 영상 등록일: 2026-04-08
 - 재생시간: 31:06
