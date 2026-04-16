@@ -143,12 +143,12 @@ flowchart TD
 **빌드/배포 흐름**
 ```mermaid
 flowchart TD
-    A[TypeScript 소스] --> B[tsc 검사]
-    B --> C[esbuild 번들링]
-    C --> D[main.js / styles.css / manifest.json]
-    D --> E[Obsidian 플러그인]
-    F[Dockerfile] --> G[Obsidian 런타임]
-    G --> H[electron-injector]
+    A["TypeScript 소스"] --> B["tsc 검사"]
+    B --> C["esbuild 번들링"]
+    C --> D["main.js / styles.css / manifest.json"]
+    D --> E["Obsidian 플러그인"]
+    F["Dockerfile"] --> G["Obsidian 런타임"]
+    G --> H["electron-injector"]
     E --> H
-    H --> I[/vault /output]
+    H --> I["/vault /output"]
 ```
