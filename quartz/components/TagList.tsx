@@ -1,9 +1,10 @@
 import { FullSlug, resolveRelative } from "../util/path"
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import { classNames } from "../util/lang"
+import { filterDisplayTags } from "./util/tags"
 
 const TagList: QuartzComponent = ({ fileData, displayClass }: QuartzComponentProps) => {
-  const tags = fileData.frontmatter?.tags
+  const tags = filterDisplayTags(fileData.frontmatter?.tags)
   if (tags && tags.length > 0) {
     return (
       <ul class={classNames(displayClass, "tags")}>

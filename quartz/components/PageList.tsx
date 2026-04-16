@@ -3,6 +3,7 @@ import { QuartzPluginData } from "../plugins/vfile"
 import { Date, getDate } from "./Date"
 import { QuartzComponent, QuartzComponentProps } from "./types"
 import { GlobalConfiguration } from "../cfg"
+import { filterDisplayTags } from "./util/tags"
 
 export type SortFn = (f1: QuartzPluginData, f2: QuartzPluginData) => number
 
@@ -68,7 +69,7 @@ export const PageList: QuartzComponent = ({ cfg, fileData, allFiles, limit, sort
     <ul class="section-ul">
       {list.map((page) => {
         const title = page.frontmatter?.title
-        const tags = page.frontmatter?.tags ?? []
+        const tags = filterDisplayTags(page.frontmatter?.tags).slice(0, 3)
 
         return (
           <li class="section-li">

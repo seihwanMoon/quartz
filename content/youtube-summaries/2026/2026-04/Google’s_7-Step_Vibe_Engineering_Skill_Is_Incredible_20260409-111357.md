@@ -4,7 +4,6 @@ source_url: "https://youtu.be/4bfKyZ7hbsU?si=amRLXXiit6ENEqNN"
 published_date: "2026-04-08"
 duration: "31:06"
 summary_line: "Google Cloud식 7단계 에이전트 스킬로 아이디어 정제부터 PRD, 수직 슬라이스 구현, 리뷰·배포까지 묶는 실전형 개발 워크플로를 검증한 영상"
-tags: ["youtube", "youtube-summary"]
 ---
 
 - 원본 URL: https://youtu.be/4bfKyZ7hbsU?si=amRLXXiit6ENEqNN
@@ -177,6 +176,5 @@ tags: ["youtube", "youtube-summary"]
 - [[youtube-summaries|YouTube Summaries]]
 - [[youtube-summaries/2026|2026 아카이브]]
 - [[youtube-summaries/2026/2026-04|2026-04 모음]]
-- [[tags/youtube|#youtube]]
-- [[tags/youtube-summary|#youtube-summary]]
+
 

@@ -6,7 +6,7 @@ default_branch: "master"
 primary_language: "TypeScript"
 license: "MIT"
 source: "github_repo"
-tags: ["github", "github-summary", "typescript", "mit"]
+tags: ["typescript", "mit"]
 ---
 # 프로젝트 소개
 [Repository](https://github.com/KosmosisDire/obsidian-webpage-export)  
@@ -158,6 +158,4 @@ flowchart TD
 - [[github-summaries|GitHub Summaries]]
 - [[github-summaries/2026|2026 아카이브]]
 - [[github-summaries/2026/2026-04|2026-04 모음]]
-- [[tags/github|#github]]
-- [[tags/github-summary|#github-summary]]
 - [[tags/typescript|#typescript]]

@@ -7,6 +7,7 @@ import { Date, getDate } from "./Date"
 import { GlobalConfiguration } from "../cfg"
 import { i18n } from "../i18n"
 import { classNames } from "../util/lang"
+import { filterDisplayTags } from "./util/tags"
 
 interface Options {
   title?: string
@@ -41,7 +42,7 @@ export default ((userOpts?: Partial<Options>) => {
         <ul class="recent-ul">
           {pages.slice(0, opts.limit).map((page) => {
             const title = page.frontmatter?.title ?? i18n(cfg.locale).propertyDefaults.title
-            const tags = page.frontmatter?.tags ?? []
+            const tags = filterDisplayTags(page.frontmatter?.tags).slice(0, 2)
 
             return (
               <li class="recent-li">
