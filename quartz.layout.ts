@@ -48,7 +48,7 @@ export const defaultContentPageLayout: PageLayout = {
       Component.RecentNotes({
         title: "Latest Notes",
         limit: 5,
-        showTags: true,
+        showTags: false,
         filter: (f) => f.slug !== "index",
       }),
     ),
@@ -97,7 +97,7 @@ export const defaultListPageLayout: PageLayout = {
       Component.RecentNotes({
         title: "Latest Notes",
         limit: 5,
-        showTags: true,
+        showTags: false,
         filter: (f) => f.slug !== "index",
       }),
     ),
