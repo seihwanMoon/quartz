@@ -43,6 +43,15 @@ export const defaultContentPageLayout: PageLayout = {
   ],
   right: [
     Component.DesktopOnly(Component.TableOfContents()),
+    Component.DesktopOnly(Component.Backlinks()),
+    Component.DesktopOnly(
+      Component.RecentNotes({
+        title: "Latest Notes",
+        limit: 5,
+        showTags: true,
+        filter: (f) => f.slug !== "index",
+      }),
+    ),
     Component.DesktopOnly(
       Component.Graph({
         localGraph: {
@@ -60,14 +69,6 @@ export const defaultContentPageLayout: PageLayout = {
           focusOnHover: false,
           enableRadial: false,
         },
-      }),
-    ),
-    Component.DesktopOnly(
-      Component.RecentNotes({
-        title: "Recent Writing",
-        limit: 4,
-        showTags: false,
-        filter: (f) => f.slug !== "index" && f.slug !== "youtube",
       }),
     ),
   ],
@@ -91,12 +92,13 @@ export const defaultListPageLayout: PageLayout = {
     Component.Explorer(),
   ],
   right: [
+    Component.DesktopOnly(Component.Backlinks()),
     Component.DesktopOnly(
       Component.RecentNotes({
-        title: "Recent Writing",
-        limit: 4,
-        showTags: false,
-        filter: (f) => f.slug !== "index" && f.slug !== "youtube",
+        title: "Latest Notes",
+        limit: 5,
+        showTags: true,
+        filter: (f) => f.slug !== "index",
       }),
     ),
   ],

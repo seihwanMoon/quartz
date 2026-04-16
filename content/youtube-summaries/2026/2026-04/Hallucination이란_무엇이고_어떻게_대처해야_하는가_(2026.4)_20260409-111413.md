@@ -1,9 +1,10 @@
----
+﻿---
 title: "Hallucination이란 무엇이고 어떻게 대처해야 하는가 (2026.4)"
 source_url: "https://youtu.be/5j2estMEg-U?si=lnk3DWjXCS3jPwRq"
 published_date: "2026-04-08"
 duration: "38:38"
 summary_line: "LLM 환각을 사실성·충실성·맥락 부족·아첨 편향으로 나눠 원인과 검증·대응 원칙을 정리한 영상."
+tags: ["youtube", "youtube-summary"]
 ---
 
 - 원본 URL: https://youtu.be/5j2estMEg-U?si=lnk3DWjXCS3jPwRq
@@ -169,3 +170,12 @@ summary_line: "LLM 환각을 사실성·충실성·맥락 부족·아첨 편향�
 - faithfulness
 - RLHF
 - sycophancy
+
+
+## 컬렉션 연결
+- [[youtube-summaries|YouTube Summaries]]
+- [[youtube-summaries/2026|2026 아카이브]]
+- [[youtube-summaries/2026/2026-04|2026-04 모음]]
+- [[tags/youtube|#youtube]]
+- [[tags/youtube-summary|#youtube-summary]]
+
