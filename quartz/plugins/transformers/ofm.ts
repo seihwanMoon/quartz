@@ -13,7 +13,7 @@ import { ReplaceFunction, findAndReplace as mdastFindReplace } from "mdast-util-
 import rehypeRaw from "rehype-raw"
 import { SKIP, visit } from "unist-util-visit"
 import path from "path"
-import { splitAnchor } from "../../util/path"
+import { splitAnchor, transformInternalLink } from "../../util/path"
 import { JSResource, CSSResource } from "../../util/resources"
 // @ts-ignore
 import calloutScript from "../../components/scripts/callout.inline"
@@ -229,21 +229,36 @@ export const ObsidianFlavoredMarkdown: QuartzTransformerPlugin<Partial<Options>>
                 // embed cases
                 if (value.startsWith("!")) {
                   const ext: string = path.extname(fp).toLowerCase()
-                  const url = slugifyFilePath(fp as FilePath)
+                  const isExplicitRelative = fp.startsWith(".")
+                  const url = isExplicitRelative ? transformInternalLink(fp) : slugifyFilePath(fp as FilePath)
                   if ([".png", ".jpg", ".jpeg", ".gif", ".bmp", ".svg", ".webp"].includes(ext)) {
                     const match = wikilinkImageEmbedRegex.exec(alias ?? "")
                     const alt = match?.groups?.alt ?? ""
-                    const width = match?.groups?.width ?? "auto"
-                    const height = match?.groups?.height ?? "auto"
+                    const width = match?.groups?.width
+                    const height = match?.groups?.height
+                    if (isExplicitRelative) {
+                      const widthAttr = width ? ` width="${width}"` : ""
+                      const heightAttr = height ? ` height="${height}"` : ""
+                      const altAttr = alt ? ` alt="${alt.replace(/"/g, "&quot;")}"` : " alt"
+                      return {
+                        type: "html",
+                        value: `<img src="${url}"${widthAttr}${heightAttr}${altAttr} />`,
+                      }
+                    }
+                    const hProperties: Record<string, string> = {
+                      alt,
+                    }
+                    if (width) {
+                      hProperties.width = width
+                    }
+                    if (height) {
+                      hProperties.height = height
+                    }
                     return {
                       type: "image",
                       url,
                       data: {
-                        hProperties: {
-                          width,
-                          height,
-                          alt,
-                        },
+                        hProperties,
                       },
                     }
                   } else if ([".mp4", ".webm", ".ogv", ".mov", ".mkv"].includes(ext)) {
