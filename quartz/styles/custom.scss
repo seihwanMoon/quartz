@@ -40,7 +40,7 @@ body::before {
 }
 
 .page {
-  max-width: 1540px;
+  max-width: 1680px;
   padding: 0 1rem 3rem;
 
   #quartz-body {
@@ -48,7 +48,7 @@ body::before {
     row-gap: 0.9rem;
 
     @media all and ($desktop) {
-      grid-template-columns: 272px minmax(0, 1fr) 240px;
+      grid-template-columns: 260px minmax(0, 1fr) 216px;
     }
   }
 
@@ -101,13 +101,13 @@ body::before {
 }
 
 .article-title {
-  font-size: clamp(1.9rem, 2.35vw, 2.9rem);
-  line-height: 1.02;
+  font-size: clamp(1.6rem, 1.85vw, 2.35rem);
+  line-height: 1.06;
   letter-spacing: -0.05em;
   margin-top: 0.35rem !important;
   margin-bottom: 0.6rem;
   max-width: none;
-  text-wrap: balance;
+  text-wrap: pretty;
 }
 
 .content-meta {
@@ -290,7 +290,7 @@ hr {
   }
 
   .article-title {
-    font-size: 1.95rem;
+    font-size: 1.8rem;
     max-width: none;
   }
 }
