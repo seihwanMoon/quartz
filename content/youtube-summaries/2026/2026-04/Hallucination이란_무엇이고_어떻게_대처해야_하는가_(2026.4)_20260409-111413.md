@@ -10,14 +10,9 @@ tags: ["환각", "factuality", "faithfulness", "rlhf"]
 > [!summary] 한 줄 요약
 > LLM 환각을 사실성·충실성·맥락 부족·아첨 편향으로 나눠 원인과 검증·대응 원칙을 정리한 영상. ^core-summary
 
-> [!info] 문서 메타
-> - 자막 소스: 수동 정리 기준[^transcript-source]
-> - 문서 유형: YouTube 요약
-
 - 원본 URL: https://youtu.be/5j2estMEg-U?si=lnk3DWjXCS3jPwRq
 - 원본 영상 등록일: 2026-04-08
 - 재생시간: 38:38
-- 처리 시각: 2026-04-09 11:14:13
 
 ## 전체 개요
 - 환각을 단순 오답이 아니라 사실성(factuality)과 충실성(faithfulness)이 어긋난 그럴듯한 생성 문제로 분해
@@ -186,4 +181,3 @@ tags: ["환각", "factuality", "faithfulness", "rlhf"]
 - [[youtube-summaries/2026|2026 아카이브]]
 - [[youtube-summaries/2026/2026-04|2026-04 모음]]
 
-[^transcript-source]: 기존 게시 문서라 자동 수집 자막 source 메타가 남아 있지 않을 수 있다. 문서 메타는 게시 시점 기준으로 보강했다.

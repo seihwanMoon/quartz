@@ -10,14 +10,9 @@ tags: ["에이전트-스킬", "prd", "수직-슬라이스", "포크-레시피"]
 > [!summary] 한 줄 요약
 > Google Cloud식 7단계 에이전트 스킬로 아이디어 정제부터 PRD, 수직 슬라이스 구현, 리뷰·배포까지 묶는 실전형 개발 워크플로를 검증한 영상 ^core-summary
 
-> [!info] 문서 메타
-> - 자막 소스: 수동 정리 기준[^transcript-source]
-> - 문서 유형: YouTube 요약
-
 - 원본 URL: https://youtu.be/4bfKyZ7hbsU?si=amRLXXiit6ENEqNN
 - 원본 영상 등록일: 2026-04-08
 - 재생시간: 31:06
-- 처리 시각: 2026-04-09 11:13:57
 
 ## 전체 개요
 - Google Cloud 디렉터가 공개한 production-grade agent skills library를 실제 개발 흐름에 대입해, 아이디어 정제-사양화-계획-구현-검증-리뷰-배포로 이어지는 7단계 작업 체계를 해부
@@ -187,4 +182,3 @@ tags: ["에이전트-스킬", "prd", "수직-슬라이스", "포크-레시피"]
 - [[youtube-summaries/2026|2026 아카이브]]
 - [[youtube-summaries/2026/2026-04|2026-04 모음]]
 
-[^transcript-source]: 기존 게시 문서라 자동 수집 자막 source 메타가 남아 있지 않을 수 있다. 문서 메타는 게시 시점 기준으로 보강했다.
