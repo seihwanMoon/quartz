@@ -25,7 +25,7 @@ tags: ["sample"]
 - 이미지는 `_assets` 아래에 저장
 - 문서에서는 상대 경로 wikilink로 연결
 
-![[./_assets/2026-04-17-manual-note-sample-image-01.png|720]]
+![[2026-04-17-manual-note-sample-image-01.png|720]]
 
 ![[Pasted image 20260417114122.png]]
 
