@@ -1,9 +1,9 @@
 ---
-title: "YouTube Summaries 2026-04"
+title: "2026-04"
 tags: ["youtube-summaries", "2026", "2026-04"]
 ---
 
-# 2026-04 Collection
+# 2026-04
 
 - [[youtube-summaries|YouTube Summaries]]
 - [[youtube-summaries/2026|2026 Archive]]

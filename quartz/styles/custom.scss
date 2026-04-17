@@ -40,12 +40,16 @@ body::before {
 }
 
 .page {
-  max-width: 1420px;
+  max-width: 1540px;
   padding: 0 1rem 3rem;
 
   #quartz-body {
     column-gap: 1.25rem;
     row-gap: 0.9rem;
+
+    @media all and ($desktop) {
+      grid-template-columns: 272px minmax(0, 1fr) 240px;
+    }
   }
 
   .sidebar {
@@ -97,12 +101,13 @@ body::before {
 }
 
 .article-title {
-  font-size: clamp(2rem, 2.8vw, 3.3rem);
+  font-size: clamp(1.9rem, 2.35vw, 2.9rem);
   line-height: 1.02;
   letter-spacing: -0.05em;
   margin-top: 0.35rem !important;
   margin-bottom: 0.6rem;
-  max-width: 13ch;
+  max-width: none;
+  text-wrap: balance;
 }
 
 .content-meta {
@@ -178,11 +183,26 @@ code {
 
 .explorer-content ul li > a {
   opacity: 0.72;
+  display: block;
+  max-width: 13.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .explorer-content ul li > a.active {
   color: var(--secondary) !important;
   opacity: 1;
+}
+
+.folder-container div > a,
+.folder-container div > button > span {
+  display: inline-block;
+  max-width: 13.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: bottom;
 }
 
 .recent-notes,
