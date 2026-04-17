@@ -1,10 +1,18 @@
-﻿---
+---
 title: "Hallucination이란 무엇이고 어떻게 대처해야 하는가 (2026.4)"
 source_url: "https://youtu.be/5j2estMEg-U?si=lnk3DWjXCS3jPwRq"
 published_date: "2026-04-08"
 duration: "38:38"
 summary_line: "LLM 환각을 사실성·충실성·맥락 부족·아첨 편향으로 나눠 원인과 검증·대응 원칙을 정리한 영상."
+tags: ["환각", "factuality", "faithfulness", "rlhf"]
 ---
+
+> [!summary] 한 줄 요약
+> LLM 환각을 사실성·충실성·맥락 부족·아첨 편향으로 나눠 원인과 검증·대응 원칙을 정리한 영상. ^core-summary
+
+> [!info] 문서 메타
+> - 자막 소스: 수동 정리 기준[^transcript-source]
+> - 문서 유형: YouTube 요약
 
 - 원본 URL: https://youtu.be/5j2estMEg-U?si=lnk3DWjXCS3jPwRq
 - 원본 영상 등록일: 2026-04-08
@@ -149,20 +157,22 @@ summary_line: "LLM 환각을 사실성·충실성·맥락 부족·아첨 편향�
     - 생성과 검증 분리, `critic first`가 실전 원칙
 
 ## 핵심 결론
-- 환각은 단순 오답이 아니라 사실성·충실성·맥락 부족·아첨 편향이 함께 만드는 생성 문제
-- LLM은 지식 DB가 아니라 검증이 필요한 생성 도구로 다뤄야 함
-- 최종 메시지 = 생성과 검증 분리, 근거 대조, 모르면 모른다고 하게 만드는 사용 방식
 
+> [!tip] 핵심 결론
+> - 환각은 단순 오답이 아니라 사실성·충실성·맥락 부족·아첨 편향이 함께 만드는 생성 문제 ^core-conclusion
+> - LLM은 지식 DB가 아니라 검증이 필요한 생성 도구로 다뤄야 함
+> - 최종 메시지 = 생성과 검증 분리, 근거 대조, 모르면 모른다고 하게 만드는 사용 방식
 ## 액션 아이템
-- 검색 결과, 문헌, 데이터베이스, 가이드라인과 답변을 대조
-- 지시문·제공 문맥·논리 전개가 맞는지 따로 점검
-- 같은 질문을 여러 번 물어 self-consistency 확인
-- 여러 AI 출력물을 상호 비교하거나 한 모델의 답을 다른 AI로 검증
-- 신뢰도/불확실성 표시를 요구
-- 정보가 부족하면 추가 정보 요청 또는 보류 허용
-- 중립적 질문으로 묻고 찬반 근거를 병렬 검토
-- 생성과 검증을 분리하고 critic first로 처리
 
+> [!info] 액션 아이템
+> - 검색 결과, 문헌, 데이터베이스, 가이드라인과 답변을 대조 ^action-items
+> - 지시문·제공 문맥·논리 전개가 맞는지 따로 점검
+> - 같은 질문을 여러 번 물어 self-consistency 확인
+> - 여러 AI 출력물을 상호 비교하거나 한 모델의 답을 다른 AI로 검증
+> - 신뢰도/불확실성 표시를 요구
+> - 정보가 부족하면 추가 정보 요청 또는 보류 허용
+> - 중립적 질문으로 묻고 찬반 근거를 병렬 검토
+> - 생성과 검증을 분리하고 critic first로 처리
 ## 핵심 키워드
 - 환각
 - factuality
@@ -172,8 +182,8 @@ summary_line: "LLM 환각을 사실성·충실성·맥락 부족·아첨 편향�
 
 
 ## 컬렉션 연결
-- [[youtube-summaries|YouTube Summaries]]
+- [[youtube-summaries|YouTube Summaries]] ^collection-links
 - [[youtube-summaries/2026|2026 아카이브]]
 - [[youtube-summaries/2026/2026-04|2026-04 모음]]
 
-
+[^transcript-source]: 기존 게시 문서라 자동 수집 자막 source 메타가 남아 있지 않을 수 있다. 문서 메타는 게시 시점 기준으로 보강했다.

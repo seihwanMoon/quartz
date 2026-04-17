@@ -13,7 +13,13 @@ tags: ["typescript", "mit"]
 공식 문서: [docs.obsidianweb.net](https://docs.obsidianweb.net/)  
 `<kbd>Stars</kbd> 1275` `<kbd>Forks</kbd> 115` `<kbd>License</kbd> MIT` `<kbd>Primary Language</kbd> TypeScript`
 
-한 줄 요약: Obsidian의 노트, Canvas, 전체 Vault를 웹용 HTML로 내보내는 플러그인.
+
+> [!summary] 한 줄 요약
+> Obsidian의 노트, Canvas, 전체 Vault를 웹용 HTML로 내보내는 플러그인. ^core-summary
+
+> [!info] 읽기 가이드
+> - 먼저 `빠른 시작`, `폴더 구조`, `실행 흐름`을 확인
+> - 추정 또는 확인 필요 표시는 저장소 구조 기준 판단[^github-inference]
 
 ## 한눈에 보는 핵심 포인트
 
@@ -155,7 +161,9 @@ flowchart TD
 ```
 
 ## 컬렉션 연결
-- [[github-summaries|GitHub Summaries]]
+- [[github-summaries|GitHub Summaries]] ^collection-links
 - [[github-summaries/2026|2026 아카이브]]
 - [[github-summaries/2026/2026-04|2026-04 모음]]
 - [[tags/typescript|#typescript]]
+
+[^github-inference]: README, docs, manifest, key files, CI 파일 기준 자동/수동 혼합 정리. 실제 실행 검증은 별도로 확인해야 한다.

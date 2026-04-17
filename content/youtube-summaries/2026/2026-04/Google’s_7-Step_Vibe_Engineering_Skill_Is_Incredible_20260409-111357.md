@@ -1,10 +1,18 @@
-﻿---
+---
 title: "Google’s 7-Step Vibe Engineering Skill Is Incredible"
 source_url: "https://youtu.be/4bfKyZ7hbsU?si=amRLXXiit6ENEqNN"
 published_date: "2026-04-08"
 duration: "31:06"
 summary_line: "Google Cloud식 7단계 에이전트 스킬로 아이디어 정제부터 PRD, 수직 슬라이스 구현, 리뷰·배포까지 묶는 실전형 개발 워크플로를 검증한 영상"
+tags: ["에이전트-스킬", "prd", "수직-슬라이스", "포크-레시피"]
 ---
+
+> [!summary] 한 줄 요약
+> Google Cloud식 7단계 에이전트 스킬로 아이디어 정제부터 PRD, 수직 슬라이스 구현, 리뷰·배포까지 묶는 실전형 개발 워크플로를 검증한 영상 ^core-summary
+
+> [!info] 문서 메타
+> - 자막 소스: 수동 정리 기준[^transcript-source]
+> - 문서 유형: YouTube 요약
 
 - 원본 URL: https://youtu.be/4bfKyZ7hbsU?si=amRLXXiit6ENEqNN
 - 원본 영상 등록일: 2026-04-08
@@ -153,17 +161,19 @@ summary_line: "Google Cloud식 7단계 에이전트 스킬로 아이디어 정�
     - 후속 영상에서 추가 브랜치 잠금과 보호 규칙을 다룰 가능성을 예고
 
 ## 핵심 결론
-- 전달 메시지는 명확함: 에이전트는 한 번에 다 맡기는 자동화가 아니라, 아이디어 정제-PRD-계획-수직 슬라이스-검증-리뷰-배포로 쪼갠 실전 절차 안에서 가장 강해짐
-- 과설계보다 단순한 MVP, 묵시적 자동화보다 명시적 스킬 호출, 실행만이 아니라 보안과 브랜치 보호까지 포함한 운영이 최종 완성 조건
 
+> [!tip] 핵심 결론
+> - 전달 메시지는 명확함: 에이전트는 한 번에 다 맡기는 자동화가 아니라, 아이디어 정제-PRD-계획-수직 슬라이스-검증-리뷰-배포로 쪼갠 실전 절차 안에서 가장 강해짐 ^core-conclusion
+> - 과설계보다 단순한 MVP, 묵시적 자동화보다 명시적 스킬 호출, 실행만이 아니라 보안과 브랜치 보호까지 포함한 운영이 최종 완성 조건
 ## 액션 아이템
-- 아이디어를 먼저 정제한 뒤 PRD로 구체화
-- 작업을 phase별 vertical slice로 분해
-- 구현 전 failing test부터 작성
-- 스킬을 명시적으로 호출해 사용
-- 리뷰 단계에서 correctness, security, performance를 점검
-- main 직접 push를 차단하는 브랜치 보호를 적용
 
+> [!info] 액션 아이템
+> - 아이디어를 먼저 정제한 뒤 PRD로 구체화 ^action-items
+> - 작업을 phase별 vertical slice로 분해
+> - 구현 전 failing test부터 작성
+> - 스킬을 명시적으로 호출해 사용
+> - 리뷰 단계에서 correctness, security, performance를 점검
+> - main 직접 push를 차단하는 브랜치 보호를 적용
 ## 핵심 키워드
 - 에이전트 스킬
 - PRD
@@ -173,8 +183,8 @@ summary_line: "Google Cloud식 7단계 에이전트 스킬로 아이디어 정�
 
 
 ## 컬렉션 연결
-- [[youtube-summaries|YouTube Summaries]]
+- [[youtube-summaries|YouTube Summaries]] ^collection-links
 - [[youtube-summaries/2026|2026 아카이브]]
 - [[youtube-summaries/2026/2026-04|2026-04 모음]]
 
-
+[^transcript-source]: 기존 게시 문서라 자동 수집 자막 source 메타가 남아 있지 않을 수 있다. 문서 메타는 게시 시점 기준으로 보강했다.
